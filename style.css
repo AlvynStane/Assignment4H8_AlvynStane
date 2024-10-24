@@ -1,0 +1,49 @@
+.header {
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.header a {
+    color: #777;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+.header a:focus {
+    color: #000;
+    font-weight: 400;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 16px;
+    color: #777;
+}
+
+.detail-label {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+.detail-value {
+    display: inline-block;
+    color: #777;
+}
+
+.buttons button:focus {
+    outline: none;
+    box-shadow: none;
+}

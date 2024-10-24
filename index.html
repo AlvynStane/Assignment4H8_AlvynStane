@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Alvyn Stane</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-start px-5 my-3 h2">Profile</h1>
+            <nav class="d-flex gap-3 px-2">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INVENTORY</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="card p-4 mx-3 cont1">
+            <div class=" row cont2">
+                <img src="profile.png" alt="profile" class="image col-3 image-fluid">
+                <div class="info col-4 justify-content-center">
+                    <div class="name mb-1" id="name-value">Alvyn Stane</div>
+                    <div class="role mb-4" id="role-value">Front End Designer</div>
+                    <div class="buttons row gap-3 mt-2 justify-content-evenly mx-1">
+                        <button class="btn btn-primary px-4 col" id="editProfile">Edit</button>
+                        <button class="btn btn-outline-success ms-2 col">Resume</button>
+                    </div>
+                </div>
+                <div class="d-grid align-items-center col-5">
+                    <div>
+                        <span class="detail-label">Availability</span>
+                        <span class="detail-value" id="availability-value">Full Time</span>
+                    </div>
+                    <div>
+                        <span class="detail-label">Usia</span>
+                        <span class="detail-value" id="usia-value">19</span>
+                    </div>
+                    <div>
+                        <span class="detail-label">Lokasi</span>
+                        <span class="detail-value" id="lokasi-value">Jakarta</span>
+                    </div>
+                    <div>
+                        <span class="detail-label">Pengalaman</span>
+                        <span class="detail-value" id="pengalaman-value">2</span>
+                    </div>
+                    <div>
+                        <span class="detail-label">Email</span>
+                        <span class="detail-value" id="email-value">email@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 d-none" id="form-section">
+        <form id="profile-form">
+            <div class="mb-3">
+                <label for="name-input" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name-input">
+            </div>
+            <div class="mb-3">
+                <label for="role-input" class="form-label">Role</label>
+                <input type="text" class="form-control" id="role-input">
+            </div>
+            <div class="mb-3">
+                <label for="availability-input" class="form-label">Availability</label>
+                <input type="text" class="form-control" id="availability-input">
+            </div>
+            <div class="mb-3">
+                <label for="usia-input" class="form-label">Usia</label>
+                <input type="number" class="form-control" id="usia-input">
+            </div>
+            <div class="mb-3">
+                <label for="lokasi-input" class="form-label">Lokasi</label>
+                <input type="text" class="form-control" id="lokasi-input">
+            </div>
+            <div class="mb-3">
+                <label for="pengalaman-input" class="form-label">Years of Experience</label>
+                <input type="number" class="form-control" id="pengalaman-input">
+            </div>
+            <div class="mb-3">
+                <label for="email-input" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email-input">
+            </div>
+            <button type="submit" class="btn btn-success px-5">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
